@@ -59,6 +59,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CHOO_PLATFORM_WINDOWS;CHOO_BUILD_DLL;_WINDLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Choo\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -73,6 +74,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CHOO_PLATFORM_WINDOWS;CHOO_BUILD_DLL;_WINDLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Choo\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,12 +84,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Choo\Log.h" />
     <ClInclude Include="src\Choo\Application.h" />
     <ClInclude Include="src\Choo.h" />
     <ClInclude Include="src\Choo\Core.h" />
     <ClInclude Include="src\Choo\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Choo\Log.cpp" />
     <ClCompile Include="src\Choo\Application.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -59,7 +59,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CHOO_PLATFORM_WINDOWS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Choo\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Choo\src;$(SolutionDir)Choo\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,7 +74,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CHOO_PLATFORM_WINDOWS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Choo\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Choo\src;$(SolutionDir)Choo\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
