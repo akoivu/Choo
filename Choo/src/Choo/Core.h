@@ -9,3 +9,5 @@
 #else
 	#error trial-engine currently does not support other platforms than Windows
 #endif
+
+#define BIT(x) (1 << x)
